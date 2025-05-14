@@ -2,9 +2,15 @@
 
 This is the payment page option for plans and subscriptions via onchain-base with your from Crypto Community apps
 
+## Users
+![users](users.jpg)
+
+## Powered by
+![powered by](coinbase.png)
 
 ## Preview
 ![Preview payment generator](preview.png)
+![Preview payment generator](paid.png)
 
 ## FLow
 
