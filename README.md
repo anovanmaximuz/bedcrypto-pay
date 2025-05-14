@@ -24,7 +24,7 @@ This is the payment page option for plans and subscriptions via onchain-base wit
 https://devfolio.co/projects/bedcrypto-44cc
 
 
-## History
+## Logs
 - https://basescan.org/tx/0x3ecee25af1c03b7281ac537e9e25ec9caeb791b2eb7b0733b651fd5b8b4456ab
 - https://commerce.coinbase.com/pay/071679f6-c432-4533-aa81-eb859d2936c0/receipt
   
