@@ -10,9 +10,13 @@ This is the payment page option for plans and subscriptions via onchain-base wit
 
 ## Preview
 ![Preview payment generator](preview.png)
-![Preview payment generator](paid.png)
+![Paid](paid.png)
 
 ## FLow
+
+Because in practice, if you redirect directly to Android, you sometimes encounter problems, therefore a payment option has been added which can be done via a desktop browser.
+
+![planntuml](plantuml.png)
 
 - payment generate from Android app
 - input invoice number and click pay
