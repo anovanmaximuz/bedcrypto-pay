@@ -8,109 +8,73 @@ $photo = "https://bedcrypto.com/web/img/features/03.png";
 <!doctype html>
 <html class="no-js" lang="en">
 <head>    
-        <meta charset="utf-8">
-        <meta name="facebook-domain-verification" content="soeemyjd6en5ih01kwe4qdokimgd2w" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title><?php echo $title; ?> </title>        
-        <link rel="shortcut icon" href="https://bedcrypto.com/img/icon_hd_3.png" type="image/x-icon">
-        <link rel="icon" href="https://bedcrypto.com/img/icon_hd_3.png" type="image/x-icon">
-        <meta name="theme-color" content="#ffffff">
-        <meta name="description" content="<?php echo $desc; ?>">
-        
-        <!--sosmed-->
-        <meta property="og:description" content="<?php echo $desc; ?>"/>
-        <meta name="twitter:description" content="<?php echo $desc; ?>"/>       
-        <meta name="keywords" content="crypto, cryptocurrency, trader"> 
-        <meta property="og:type" content="article"/>
-        <meta property="og:title" content="<?php echo $title; ?>"/>
+    <meta charset="utf-8">
+    <meta name="facebook-domain-verification" content="soeemyjd6en5ih01kwe4qdokimgd2w" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title><?php echo $title; ?> </title>        
+    <link rel="shortcut icon" href="https://bedcrypto.com/img/icon_hd_3.png" type="image/x-icon">
+    <link rel="icon" href="https://bedcrypto.com/img/icon_hd_3.png" type="image/x-icon">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="<?php echo $desc; ?>">
+    <meta property="og:description" content="<?php echo $desc; ?>"/>
+    <meta name="twitter:description" content="<?php echo $desc; ?>"/>       
+    <meta name="keywords" content="crypto, cryptocurrency, trader"> 
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="<?php echo $title; ?>"/>
+    <meta property="og:url" content="https://bedcrypto.com"/>
+    <meta property="og:site_name" content="<?php echo $title; ?>"/>
+    <meta property="article:tag" content="crypto"/>
+    <meta property="article:tag" content="trader"/>
+    <meta property="article:tag" content="signal"/>
+    <meta property="article:tag" content="analytics"/>
+    <meta property="og:image" content="https://bedcrypto.com/img/banner_real.jpg"/>
+    <meta property="og:image:width" content="560"/>
+    <meta property="og:image:height" content="315"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="<?php echo $title; ?>"/>
+    <meta name="twitter:image" content="https://bedcrypto.com/img/banner_real.jpg"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="web/css/style.css">
+    
+    <style>         
+        .btn-pay{
+             background: rgb(55, 112, 255);
+             border: 2px solid rgb(55, 112, 255);
+         }
 
-        <meta property="og:url" content="https://bedcrypto.com"/>
-        <meta property="og:site_name" content="<?php echo $title; ?>"/>
-        <meta property="article:tag" content="crypto"/>
-        <meta property="article:tag" content="trader"/>
-        <meta property="article:tag" content="signal"/>
-        <meta property="article:tag" content="analytics"/>
-        <meta property="og:image" content="https://bedcrypto.com/img/banner_real.jpg"/>
-        <meta property="og:image:width" content="560"/>
-        <meta property="og:image:height" content="315"/>
-        <meta name="twitter:card" content="summary_large_image"/>
+        .invoice {
+          background: #fff;
+          padding: 30px;
+          border: 1px solid #dee2e6;
+          border-radius: 10px;
+          margin-top: 50px;
+        }
+        .invoice-title {
+          margin-bottom: 30px;
+        }
 
-        <meta name="twitter:title" content="<?php echo $title; ?>"/>
-        <meta name="twitter:image" content="https://bedcrypto.com/img/banner_real.jpg"/>
-        <!--end sosmed-->
-        
-		<!-- JS here -->
-        <script src="web/js/modernizr-3.5.0.min.js"></script>
-        <script src="web/js/jquery-1.12.4.min.js"></script>
-        <script src="web/js/popper.min.js"></script>
-        <script src="web/js/bootstrap.min.js"></script>
-        <script src="web/js/one-page-nav-min.js"></script>
-        <script src="web/js/slick.min.js"></script>
-        <script src="web/js/ajax-form.js"></script>
-        <script src="web/js/wow.min.js"></script>
-        <script src="web/js/jquery.scrollUp.min.js"></script>
-        <script src="web/js/jquery.magnific-popup.min.js"></script>
-        <script src="web/js/jquery.nice-select.min.js"></script>
-        <script src="web/js/jquery.countdown.min.js"></script>
-        <script src="web/js/jquery.mb.YT.js"></script>
-        <script src="web/js/plugins.js"></script>
-        <script src="web/js/main.js"></script>
-
-		<!-- CSS here -->
-        <link rel="stylesheet" href="web/css/bootstrap.min.css">
-        <link rel="stylesheet" href="web/css/animate.min.css">
-        <link rel="stylesheet" href="web/css/magnific-popup.css">
-        <link rel="stylesheet" href="web/css/fontawesome-all.min.css">
-        <link rel="stylesheet" href="web/css/themify-icons.css">
-        <link rel="stylesheet" href="web/css/slick.css">
-        <link rel="stylesheet" href="web/css/default.css">
-        <link rel="stylesheet" href="web/css/style.css">
-        <link rel="stylesheet" href="web/css/responsive.css">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3YEZPYMGKZ"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-3YEZPYMGKZ');
-          
-          
-        </script>
-        <style>
-
-    .invoice {
-      background: #fff;
-      padding: 30px;
-      border: 1px solid #dee2e6;
-      border-radius: 10px;
-      margin-top: 50px;
-    }
-    .invoice-title {
-      margin-bottom: 30px;
-    }
-
-            .powered{
-                border-radius: 32px;
-            }
-            .counter{
-                font-size: 50px !important;
-            }
-            .canvasjs-chart-credit{
-                    background-color: white;
-                    width: 100px;
-                    left: 0px !important;
-                    right: unset !important;
-                    color: white !important;
-                    top: 353px !important;
-            }
-            .hero-area-wrap::before {
-                background-image: none;
-            }
-            .features-area-wrap::before{
-                background-image: none;
-            }
-            </style>
+        .powered{
+            border-radius: 32px;
+        }
+        .counter{
+            font-size: 50px !important;
+        }
+        .canvasjs-chart-credit{
+                background-color: white;
+                width: 100px;
+                left: 0px !important;
+                right: unset !important;
+                color: white !important;
+                top: 353px !important;
+        }
+        .hero-area-wrap::before {
+            background-image: none;
+        }
+        .features-area-wrap::before{
+            background-image: none;
+        }
+    </style>
             <script type="application/ld+json">
                {
                   "@context": "https://schema.org",
@@ -224,17 +188,7 @@ $photo = "https://bedcrypto.com/web/img/features/03.png";
               "url":"https://bedcrypto.com"
             }
             </script>
-            
-         <script src="https://omnipotent.net/jquery.sparkline/contrib/jquery/jquery-1.7.2.min.js"/></script>
-        <script src="https://omnipotent.net/jquery.sparkline/2.0/jquery.sparkline.js"/></script>        
-        <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
-        <script type="text/javascript">
-    /* <![CDATA[ */
-    $(function() {        
-
-    });
-    /* ]]> */
-    </script>
+   
         <script type="application/ld+json">
             {
               "@context": "https://schema.org",
@@ -283,8 +237,7 @@ $photo = "https://bedcrypto.com/web/img/features/03.png";
         <!-- hero-area-wrap -->
         <div class="hero-area-wrap">
             <!-- header -->
-            <header id="sticky-header" class="transparent-menu pt-20-mati pb-20">
-
+            <header id="sticky-header" class="transparent-menu pt-20-mati pb-20" style="margin-top:20px">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
@@ -300,11 +253,11 @@ $photo = "https://bedcrypto.com/web/img/features/03.png";
                                     </button>
                                     <div class="collapse navbar-collapse" id="navbarNav">
                                         <ul class="navbar-nav ml-auto">
-                                            <li class="nav-item actisve"><a class="nav-link" href="https://guide.bedcrypto.com/" target="_blank">Guide</a></li>  
+                                            <li class="nav-item actisve" style="display:none"><a class="nav-link" href="https://guide.bedcrypto.com/" target="_blank">Guide</a></li>  
                                         </ul>
                                     </div>
                                     <div class="header-btn d-none d-xl-block">                                        
-                                        <a href="/"><button class="btn">Back</button></a>
+                                        <a href="/"><button class="btn">Home</button></a>
                                     </div>
                                 </nav>
                             </div>
@@ -313,87 +266,91 @@ $photo = "https://bedcrypto.com/web/img/features/03.png";
                 </div>
             </header>
             <!-- header-end -->
-  
         </div>
         <!-- hero-area-wrap-end -->
         
         <div  class="features-area-wrap" >
             <section class="features-area pt-150 pb-115">
                 <div class="container">
-                     <div class="row">
-                    <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 text-center">
-                        <div class="section-title mb-20">
-                            <h1>Pay with Crypto</h1>
-                            <p>This is the payment page for plans and subscriptions via onchain-base with your crypto.</p>
-                        </div>
+                    <div class="row" id="form-query">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                              <div class="col-md-5 invoice">
+                                  <div style="text-align:center">
+                                    <h1 >Pay with Crypto</h1>
+                                    <span>This is the payment page for plans and subscriptions via onchain-base with your crypto.</span>
+                                </div>
+                                <hr>                            
+                                <label for="exampleInput" class="form-label"><strong>Enter invoice code:</strong></label>
+                                <input type="text" class="form-control" id="invoice" placeholder="Type here...">
+                                Make sure you have checked out in the application and received the invoice number.
+                                <div id="noDataView" class="mt-3" style="display: none;">
+                                    <div class="alert alert-danger" id="message">No Data found for this invoice.</div>
+                                </div>
+                                <div class="row mt-4">
+                                  <div class="col-12 text-center">
+                                      <button class="btn btn-pay btn-primary mt-3 w-100" onclick="sendPayment()" type="button" ">Generate Payment</button>      
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                     </div>
-                </div>
+                    
                     <div class="row" id="form-invoice" style="display:none">
                         <div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-5 invoice">
-      <div class="d-flex justify-content-between align-items-center">
-        <h1 class="invoice-title">Invoice</h1>
-        <div class="text-end">
-            <strong>Date:</strong> <span id="inv-created">May 12, 2025</span><br>
-          <strong>Invoice #:</strong> <span id="inv-name">INV-000123</span>
-        </div>
-      </div>
-
-      <hr>
-
- 
-
-      <div class="row mb-4">
-        <div class="col-12">
-          <p><strong>Service Description:</strong></p>
-          <p id="pay-for">Website development and 1-year hosting plan for Client Name including responsive design, domain registration, and ongoing support.</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-6">
-          <!-- Optional: Payment terms or notes -->
-        </div>
-          <div class="col-sm-6 text-end" style="text-align: right;">
-         <h4><strong id="inv-price">Total: $671.00</strong></h4>
-        </div>
-      </div>
-
-      <div class="row mt-4">
-        <div class="col-12 text-center">
-            <a class="btn btn-primary mt-3 w-100" id="inv-link" href="google.com" type="button" ">Pay Now </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
+                            <div class="row justify-content-center">
+                              <div class="col-md-5 invoice">
+                                  <div style="text-align:center">
+                                    <h1 >Pay with Crypto</h1>
+                                    This is the payment page for plans and subscriptions via onchain-base with your crypto.
+                                    </div>
+                                  <hr>    
+                                <div class="row mb-4">
+                                    <div class="col-12" style="text-align:center">
+                                        <h4><strong id="inv-price">20 USD</strong></h4>
+                                        amount to pay<span id="pay-for"></span>
+                                  </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-6">Invoice</div>
+                                    <div class="col-6" style="text-align:right"> <span id="inv-name">INV-000123</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">Created</div>
+                                    <div class="col-6" style="text-align:right"><span id="inv-created">May 12, 2025</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">Expired</div>
+                                    <div class="col-6" style="text-align:right"><span id="inv-expired">May 12, 2025</span></div>
+                                </div>
+                     
+                                <div class="row mt-4">
+                                  <div class="col-12 text-center">
+                                      <a class="btn btn-pay btn-primary mt-3 w-100" id="inv-link" href="/" type="button">Pay Now </a>
+                                      <div><a class="mt-10 w-100"  href="https://bedcrypto.com/pay" >Back </a></div>
+                                  </div>
+                                    
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                     </div>
-        <div class=" row" id="form-query">  
-        <div class="col-md-12">
-            
-          <div class="container mt-5">
-        <div class="row justify-content-center">
-          <div class="col-md-4">
-            <label for="exampleInput" class="form-label">Enter invoice code:</label>
-            <input type="text" class="form-control" id="invoice" placeholder="Type here...">
-            <div id="noDataView" class="mt-3" style="display: none;">
-        <div class="alert alert-danger" id="message">No Data found for this invoice.</div>
-      </div>
-            <button class="btn btn-primary mt-3 w-100" type="button" onclick="sendPayment()">Generate Payment</button>
-          </div>
-        </div>
-      </div>
-        </div>
-        
-      </div>
+                    
+                    <div class=" row" >  
+                        <div class="col-md-12" style="text-align:center">
+                        <div style="margin-top:10px; text-align: center">Need Help? Contact <a href="mailto:bedcrypto.official@gmail.com?subject=Help for crypto payment">bedcrypto.official@gmail.com</a> or <a href="https://t.me/banteng_pribumi" target="_blank">Telegram</a>
+                        </div>
+                            <br>
+                            powered by<br>
+                            <img width="250px" src="img/basecommerce.png"/> 
+                        </div>
+
+                  </div>
                 </div>
             </section>
         </div>
-        <!-- features-area-wrap -->
-        
-      
     <script>
   function sendPayment() {
     const formInvoice = document.getElementById('form-invoice');    
@@ -416,16 +373,30 @@ $photo = "https://bedcrypto.com/web/img/features/03.png";
             noDataView.style.display = 'block'; 
             formInvoice.style.display = 'none';
             messageDiv.textContent = "Invoice "+invoiceValue+" not found";
-        } else {
-            formInvoice.style.display = 'block';
-            formQuery.style.display = 'none';
-            document.getElementById('inv-name').innerText = invoiceValue
-            document.getElementById('inv-created').innerText = data.data.created 
-            document.getElementById('pay-for').innerText = data.data.pay_for 
-            document.getElementById('inv-price').innerText = "Total: $"+data.data.price+".00"
-            document.getElementById('inv-link').href = data.data.callback  
-                
-            noDataView.style.display = 'none'; 
+        } else { 
+            if(data.data.payment=="crypto"){
+                if(data.data.trx_status=="paid"){
+                    formQuery.style.display = 'block';
+                    noDataView.style.display = 'block'; 
+                    formInvoice.style.display = 'none';
+                    messageDiv.textContent = "Invoice "+invoiceValue+" status:"+data.data.trx_status;
+                }else{
+                    formInvoice.style.display = 'block';
+                    formQuery.style.display = 'none';
+                    document.getElementById('inv-name').innerText = invoiceValue;
+                    document.getElementById('inv-created').innerText = data.data.created;
+                    document.getElementById('inv-expired').innerText = data.data.expired_date; 
+                    document.getElementById('pay-for').innerText = ", for "+data.data.pay_for; 
+                    document.getElementById('inv-price').innerText = data.data.price+" USD";
+                    document.getElementById('inv-link').href = data.data.callback;  
+                    noDataView.style.display = 'none'; 
+                }
+            }else{
+                formQuery.style.display = 'block';
+                noDataView.style.display = 'block'; 
+                formInvoice.style.display = 'none';
+                messageDiv.textContent = "Invoice "+invoiceValue+" does not use crypto as payment.";
+            }
         }
     })
     .catch(error => {
@@ -433,7 +404,7 @@ $photo = "https://bedcrypto.com/web/img/features/03.png";
     });
   }
 </script>  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
     </body>
 
 </html>
