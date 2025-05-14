@@ -8,6 +8,9 @@ This is the payment page option for plans and subscriptions via onchain-base wit
 copy file into webserver path
 ```
 
+## Preview
+![Preview payment generator](preview.png)
+
 ## Usage
 
 - payment generate from Android app
